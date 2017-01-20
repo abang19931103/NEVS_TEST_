@@ -11,7 +11,7 @@ NeedleItem::NeedleItem(QGraphicsItem *paren)
     //sleep(1000);
     stdRand=0;
     animation->setStartValue(stdRand);
-    animation->setEasingCurve(QEasingCurve::OutQuint);
+    animation->setEasingCurve(QEasingCurve::InOutQuint);
     qDebug()<<"animation->setStartValue(0);";
 }
 

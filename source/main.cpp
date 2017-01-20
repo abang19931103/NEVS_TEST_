@@ -9,7 +9,9 @@ int main(int argc,char * argv[])
 
 
     allwidget w;
-
+    w.setWindowFlags(Qt::FramelessWindowHint);
+    //w.setWindowOpacity(1);
+    //w.setAttribute(Qt::WA_TranslucentBackground);
     w.show();
 
     return app.exec();

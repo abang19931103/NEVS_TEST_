@@ -2,13 +2,14 @@
 
 allwidget::allwidget(QWidget *parent) : QWidget(parent)
 {
-    scene=new QGraphicsScene;
+    scene=new QGraphicsScene(-960,-360,1920,720);
     Needleitem=new NeedleItem;
     Dashitem=new DashItem;
     Backgrounditem=new BackgroundItem;
     scene->addItem(Backgrounditem);
     scene->addItem(Dashitem);
     scene->addItem(Needleitem);
+    scene->setBackgroundBrush(Qt::black);
     Backgrounditem->setZValue(0);
     Dashitem->setZValue(1);
     Needleitem->setZValue(3);
@@ -32,16 +33,17 @@ allwidget::allwidget(QWidget *parent) : QWidget(parent)
     Grarwidget->setZValue(2);
 
     view=new QGraphicsView(this);
-    view->resize(1921,721);//设置视图大小
+    view->resize(1920,720);//设置视图大小
     view->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     view->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
-    //view.setSceneRect(-960,-360,1920,720);
-    //view.setWindowFlags(Qt::FramelessWindowHint);//隐藏状态栏
+    //view->setSceneRect(-960,-360,1920,720);
+    view->setFrameStyle(0);
+    view->setAlignment(Qt::AlignLeft | Qt::AlignTop);
     view->setScene(scene);
 
     qDebug()<<"main: "<<QThread::currentThreadId();
 
-    resize(1920,720);
+    //resize(1920,720);
 
     Lthread=new QThread(this);
     worker=new Worker;
