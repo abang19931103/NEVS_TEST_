@@ -29,12 +29,7 @@ void NeedleItem::paint(QPainter *painter,
     QPixmap NeedlePix;
     NeedlePix.load(":/Image/Image/Needle.png");
     painter->setRenderHint(QPainter::SmoothPixmapTransform);
-/*
-    QTransform transform;
-    transform.rotate(60);
-    painter->setWindow(-300,-300,600,600);
-    painter->setWorldTransform(transform);
-*/
+
     painter->rotate(45);
 
     painter->drawPixmap(-45,0,NeedlePix.width(),NeedlePix.height(),NeedlePix);
