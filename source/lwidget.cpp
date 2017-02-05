@@ -70,7 +70,7 @@ void LWidget::Calc_Fps()
             FPSLabel->setText("FPS: counting fps...");
         FPSLabel->setText("FPS: "+QString::number(fps));
         frame = 0;
-        Time.start();
+        Time.restart();
         started = true;
     }
     frame++;
