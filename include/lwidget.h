@@ -13,12 +13,19 @@ public:
     explicit LWidget(QWidget *parent = 0);
 
     TestLable * LLabel[4];
+    TestLable *FPSLabel;
     QVBoxLayout *LLayout;
     int Labeldata[4];
+
+
+    QString m_current_fps;
+
+    void Calc_Fps(void);
 signals:
 
 public slots:
     void Update_LWiaget_data(int * LLabel_data);
+
 };
 
 #endif // LWIDGET_H

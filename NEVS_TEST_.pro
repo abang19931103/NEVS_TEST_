@@ -25,4 +25,6 @@ SOURCES += \
     source/testlabel.cpp \
     source/worker.cpp \
     source/data.cpp
+
+
 QT += widgets

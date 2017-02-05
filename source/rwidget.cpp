@@ -21,7 +21,7 @@ void RWidget::Update_LWiaget_data(int *RLabel_data)
     int i;
     for(i=0;i<4;i++)
     {
-        RLabel[i]->setText("Left Label\t"+QString::number(RLabel_data[i+4]));
+        RLabel[i]->setText("Right Label\t"+QString::number(RLabel_data[i+4]));
     }
 }
 
