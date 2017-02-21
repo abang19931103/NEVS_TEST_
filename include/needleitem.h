@@ -13,7 +13,10 @@ public:
                const QStyleOptionGraphicsItem *option,QWidget *widget);
 
     int stdRand;
-
+    int m_frames;
+    QTime m_time;
+    qreal m_instantaneousFrequency;
+    QElapsedTimer m_instantaneousElapsed;
     QPropertyAnimation *animation ;
 protected:
     void timerEvent(QTimerEvent *);

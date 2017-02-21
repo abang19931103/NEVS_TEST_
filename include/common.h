@@ -19,6 +19,7 @@
 
 
 #include <QPainter>
+#include <QElapsedTimer>
 #include <QTimer>
 #include <QTime>
 #include <QDebug>
