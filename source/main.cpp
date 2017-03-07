@@ -5,7 +5,7 @@
 int main(int argc,char * argv[])
 {
     QApplication app(argc,argv);
-
+    rc_data_mutex_init();
 
 
     allwidget w;

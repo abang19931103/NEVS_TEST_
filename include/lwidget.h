@@ -16,7 +16,7 @@ public:
     TestLable *FPSLabel;
     QVBoxLayout *LLayout;
     int Labeldata[4];
-
+    int Show_FPS;
 
     QString m_current_fps;
 

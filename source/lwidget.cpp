@@ -85,8 +85,10 @@ void LWidget::Update_LWiaget_data(int *LLabel_data)
     }
 
 
-    Calc_Fps();
+    //Calc_Fps();
     //FPSLabel->setText("FPS: "+m_current_fps);
+    get_FPS(&Show_FPS);
+    FPSLabel->setText("FPS: "+QString::number(Show_FPS));
 
 }
 

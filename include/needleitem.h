@@ -1,7 +1,7 @@
 #ifndef MYITEM_H
 #define MYITEM_H
 #include "common.h"
-
+#include "data.h"
 
 class NeedleItem : public QGraphicsObject
 {

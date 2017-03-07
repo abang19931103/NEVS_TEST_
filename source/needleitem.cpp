@@ -60,6 +60,7 @@ void NeedleItem::timerEvent(QTimerEvent *event)
     stdRand=rand()%270;
     //stdRand=270;
     animation->setEndValue(stdRand);
+    set_FPS((int) m_instantaneousFrequency);
 
 
 }
