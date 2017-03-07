@@ -14,7 +14,7 @@ allwidget::allwidget(QWidget *parent) : QWidget(parent)
     Backgrounditem->setZValue(0);
     Dashitem->setZValue(1);
     Needleitem->setZValue(3);
-
+    /*
     SpeedLabel=new CenterLabel;
     GraSpeedLabel=scene->addWidget(SpeedLabel);
     GraSpeedLabel->setPos(0-(SpeedLabel->width()/2),
@@ -32,7 +32,7 @@ allwidget::allwidget(QWidget *parent) : QWidget(parent)
     Grarwidget->setPos((650+650-rwidget->width())/2,
                        (720-rwidget->height()-720)/2);
     Grarwidget->setZValue(2);
-
+    */
     view=new QGraphicsView(this);
     view->setCacheMode(QGraphicsView::CacheBackground);
     view->setViewportUpdateMode(QGraphicsView::BoundingRectViewportUpdate);
@@ -47,7 +47,7 @@ allwidget::allwidget(QWidget *parent) : QWidget(parent)
     qDebug()<<"main: "<<QThread::currentThreadId();
 
     //resize(1920,720);
-
+    /*
     Lthread=new QThread(this);
     worker=new Worker;
     Lthread->start();
@@ -58,6 +58,7 @@ allwidget::allwidget(QWidget *parent) : QWidget(parent)
 
     connect(this,SIGNAL(changLabelText(int*)),lwidget,SLOT(Update_LWiaget_data(int*)));
     connect(this,SIGNAL(changLabelText(int*)),rwidget,SLOT(Update_LWiaget_data(int*)));
+    */
 }
 
 void allwidget::timerEvent(QTimerEvent *event)
