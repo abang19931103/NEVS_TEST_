@@ -20,7 +20,6 @@ public:
     NeedleItem *Needleitem;
     DashItem *Dashitem;
     BackgroundItem *Backgrounditem;
-    /*
     CenterLabel *SpeedLabel;
     QGraphicsWidget *GraSpeedLabel;
 
@@ -29,7 +28,7 @@ public:
 
     RWidget *rwidget;
     QGraphicsWidget *Grarwidget;
-    */
+
     QGraphicsView *view;
 
 
