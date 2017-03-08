@@ -29,5 +29,4 @@
 
 #include <QThread>
 #include <QMutex>
-#include <pthread.h>
 #endif // COMMON_H

@@ -24,6 +24,4 @@ int get_data(void *data);
 int set_FPS(int data);
 
 int get_FPS(void *data);
-
-
 #endif // DATA_H

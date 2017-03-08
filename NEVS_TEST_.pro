@@ -27,4 +27,4 @@ SOURCES += \
     source/data.cpp
 
 
-QT += widgets
+QT += widgets opengl

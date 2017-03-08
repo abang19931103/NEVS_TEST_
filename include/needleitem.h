@@ -20,6 +20,9 @@ public:
     QPropertyAnimation *animation ;
 protected:
     void timerEvent(QTimerEvent *);
+
+private:
+    QPixmap NeedlePix;
 };
 
 #endif // MYITEM_H
